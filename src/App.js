@@ -19,6 +19,8 @@ class App extends Component {
         <Container>
           <Row>
             <Col>Stuff</Col>
+            <Col>Stuff</Col>
+            <Col>Stuff</Col>
           </Row>
         </Container>
       </>
