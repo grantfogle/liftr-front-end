@@ -4,6 +4,13 @@ import Navigation from './components/Navigation';
 import logo from './logo.svg';
 import './App.css';
 
+/* create a navigation
+add interactivity
+allow users to create goals
+allow users to upload/track workouts
+allow users to track/show progress
+*/
+
 class App extends Component {
   render() {
     return (
