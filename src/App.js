@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
+import Goals from './components/Goals';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,7 +17,9 @@ class App extends Component {
     return (
       <>
         <Navigation />
+        <Goals />
         <Container>
+
           <Row>
             <Col>Stuff</Col>
             <Col>Stuff</Col>
