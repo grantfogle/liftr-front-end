@@ -1,7 +1,20 @@
 # Liftr: Weight training app
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
+
+Liftr is an app that will be designed to let users create and hit training goals. 
+
+## List of technologies
+Front End
+* React
+* Chart.js
+* other...?
+
+Back end
+* Node
+* Express
+* Postgresql
 
 In the project directory, you can run:
 
