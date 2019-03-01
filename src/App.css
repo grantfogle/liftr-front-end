@@ -31,3 +31,44 @@
     transform: rotate(360deg);
   }
 }
+
+.hamburger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding: 5px;
+  margin: 10px 10px;
+}
+.hamburger:hover {
+  opacity: .5;
+}
+.line {
+  height: 4px;
+  width: 100%;
+  border: 2px solid white;
+}
+
+.schedule {
+  background-color: #ecf0f1;
+  height: 100px;
+  width: 100%;
+}
+
+.schedule h4 {
+  background-color: #34495e;
+  color: white;
+  text-align: 'center';
+  width: 100%;
+
+}
+.schedule ul {
+  text-decoration: none;
+}

@@ -1,0 +1,25 @@
+.side-menu {
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40vw;
+    max-width: 400px;
+    z-index: 200;
+}
+
+.side-menu ul {
+    list-style: none;
+    height: 100%;
+    width: 100%;
+}
+
+.side-menu li {
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+.side-menu li:hover {
+   background-color: gray;
+}

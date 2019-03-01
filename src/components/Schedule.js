@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import '../App.css';
+
 
 const calendar = () => {
     let schedule = [
@@ -11,6 +13,17 @@ const calendar = () => {
         { day: 'Friday', activity: ['Rest'] },
         { day: 'Saturday', activity: ['Ski'] },
     ]
+
+    return schedule.map(activity => {
+        return (
+            <Col className="schedule">
+                <h4>{activity.day}</h4>
+                <ul>
+                    <li>{activity.activity[0]}</li>
+                </ul>
+            </Col>
+        )
+    })
 }
 
 const Schedule = () => {

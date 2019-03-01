@@ -1,20 +1,23 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import '../App.css';
 
 const Navigation = () => {
     return (
-        <Navbar bg="dark" variant="dark">
-            <Navbar.Brand href="#home">
-                {/* <img
-                    alt=""
-                    src="/logo.svg"
-                    width="30"
-                    height="30"
-                    className="d-inline-block align-top"
-                /> */}
-                Liftr
-            </Navbar.Brand>
-        </Navbar>
+        <header>
+            <nav>
+                <Navbar bg="dark" variant="dark">
+                    <Navbar.Brand href="#home">
+                        Liftr
+                    </Navbar.Brand>
+                    <div className="hamburger">
+                        <div className="line"></div>
+                        <div className="line"></div>
+                        <div className="line"></div>
+                    </div>
+                </Navbar>
+            </nav>
+        </header>
     )
 }
 

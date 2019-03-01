@@ -33,13 +33,14 @@ const Navigation = () => {
     return (
         <Jumbotron fluid>
             <Container>
-                <h1>Hello, world!</h1>
+                <h1>Today's Workout: Lift and BJJ</h1>
+                <h4></h4>
                 <p>
                     This is a simple hero unit, a simple jumbotron-style component for calling
                     extra attention to featured content or information.
                 </p>
                 <p>
-                    <Button variant="primary">Learn more</Button>
+                    <Button variant="primary">Complete</Button>
                 </p>
                 {goalProgess()}
             </Container>
