@@ -3,6 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
+import Table from 'react-bootstrap/Table'
 import '../App.css';
 
 
@@ -29,6 +30,38 @@ const goalProgess = () => {
         let progress = (goal.current / goal.goal) * 100;
         return <ProgressBar className="progressBar" now={progress} label={goal.name + ' goal: ' + goal.goal} />
     })
+}
+
+const workout = () => {
+    if (this.props.dailyWorkout) {
+
+    }
+    return (
+        <Table>
+            <thead>
+                <tr>
+                    <th>Exercise</th>
+                    <th>Weight/Intensity</th>
+                    <th>Sets</th>
+                    <th>Reps</th>
+                    <th>Rest (s)</th>
+                    <th>Complete?</th>
+                </tr>
+            </thead>
+            {this.props.dailyWorkout.map(exercise => {
+                return (
+                    <tr>
+                        <td>exercise.name</td>
+                        <td>exercise.intensity</td>
+                        <td>exercise.sets</td>
+                        <td>exercise.reps</td>
+                        <td>exercise.rest</td>
+                        <td>exercise.complete</td>
+                    </tr>
+                )
+            })}
+        </Table>
+    )
 }
 
 const Navigation = () => {
