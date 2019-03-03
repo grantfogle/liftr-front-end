@@ -8,6 +8,9 @@
     max-width: 400px;
     z-index: 200;
 }
+.side-menu-hidden {
+    display: none;
+}
 
 .side-menu ul {
     list-style: none;

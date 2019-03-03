@@ -1,11 +1,11 @@
 import React from 'react';
 import './SideMenu.css'
 
-const SideMenu = () => {
+const SideMenu = ({ sideMenu, toggleSideMenu }) => {
     return (
-        <nav className="side-menu">
+        <nav className={sideMenu ? "side-menu" : "side-menu-hidden"}>
             <ul>
-                <li>Close X</li>
+                <li onClick={toggleSideMenu}>Close X</li>
                 <li><a href="#"></a>Add a new goal</li>
                 <li><a href="#"></a>Add a new workout</li>
                 <li><a href="#"></a>Track Progress</li>

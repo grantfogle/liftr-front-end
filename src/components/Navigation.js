@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import '../App.css';
 
-const Navigation = () => {
+const Navigation = ({ toggleSideMenu }) => {
     return (
         <header>
             <nav>
@@ -10,7 +10,7 @@ const Navigation = () => {
                     <Navbar.Brand href="#home">
                         Liftr
                     </Navbar.Brand>
-                    <div className="hamburger">
+                    <div className="hamburger" onClick={toggleSideMenu}>
                         <div className="line"></div>
                         <div className="line"></div>
                         <div className="line"></div>

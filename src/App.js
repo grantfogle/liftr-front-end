@@ -15,11 +15,23 @@ allow users to track/show progress
 */
 
 class App extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      sideMenu: false,
+    }
+  }
+
+  toggleSideMenu = () => {
+    this.setState({ sideMenu: !this.state.sideMenu })
+  }
+
   render() {
     return (
       <div style={{ height: '100%' }}>
-        <Navigation />
-        <SideMenu />
+        <Navigation toggleSideMenu={this.toggleSideMenu} />
+        <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
         <Goals />
         <Schedule />
         <Container>
