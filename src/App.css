@@ -8,12 +8,6 @@
   pointer-events: none;
 }
 
-/* header nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-} */
-
 .App-link {
   color: #61dafb;
 }
@@ -26,6 +20,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 .hamburger {
   position: fixed;
