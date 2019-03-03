@@ -2,7 +2,9 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import ProgressBar from 'react-bootstrap/ProgressBar'
+import ProgressBar from 'react-bootstrap/ProgressBar';
+import '../App.css';
+
 
 const goalProgess = () => {
     let goals = [
@@ -25,7 +27,7 @@ const goalProgess = () => {
 
     return goals.map(goal => {
         let progress = (goal.current / goal.goal) * 100;
-        return <ProgressBar now={progress} label={goal.name + ' goal: ' + goal.goal} />
+        return <ProgressBar className="progressBar" now={progress} label={goal.name + ' goal: ' + goal.goal} />
     })
 }
 
