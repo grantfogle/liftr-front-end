@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import Goals from './components/Goals';
 import Schedule from './components/Schedule';
 import SideMenu from './components/SideMenu/SideMenu';
+import Footer from './components/Footer';
 import logo from './logo.svg';
 import './App.css';
 
@@ -41,6 +42,7 @@ class App extends Component {
             <Col>Stuff</Col>
           </Row>
         </Container>
+        <Footer />
       </div>
     );
   }

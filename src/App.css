@@ -70,3 +70,10 @@
   height: 3em;
   font-size: 2em;
 }
+
+footer {
+  height: 120px;
+  width: 100%;
+  color: white;
+  /* background-color: dark */
+}

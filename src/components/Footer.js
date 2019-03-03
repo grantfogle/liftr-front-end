@@ -4,7 +4,7 @@ import '../App.css';
 
 const Footer = ({ toggleSideMenu }) => {
     return (
-        <footer>
+        <footer className="bg-dark">
             <ul>
                 <li>social links</li>
                 <li>social links</li>
