@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Table from 'react-bootstrap/Table'
+import ListGroup from 'react-bootstrap/ListGroup';
 import DailyWorkout from './DailyWorkout';
 import '../App.css';
 
@@ -72,12 +73,12 @@ const Navigation = () => {
                 <div className="daily-workout">
                     <h1>Today's Workout: Lift and BJJ</h1>
                     <h4>April 24th, 2019</h4>
-                    <ul>
-                        <li>Bench Press</li>
-                        <li>Squat</li>
-                        <li>Pullups</li>
-                        <li>Stretch</li>
-                    </ul>
+                    <ListGroup>
+                        <ListGroup.Item>Bench Press</ListGroup.Item>
+                        <ListGroup.Item>Squat</ListGroup.Item>
+                        <ListGroup.Item>Pullups</ListGroup.Item>
+                        <ListGroup.Item>Full Body Stretch</ListGroup.Item>
+                    </ListGroup>
                     <p>
                         <Button variant="primary">Complete</Button>
                     </p>
