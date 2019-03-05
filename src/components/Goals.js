@@ -66,6 +66,14 @@ const workout = () => {
     )
 }
 
+//daily workout component
+const dailyWorkout = () => {
+    let workout = ["Bench Press", "Squat", "Pullups", "Full Body Stretch"]
+    return (
+        workout.map(exercise => <ListGroup.Item>{exercise}</ListGroup.Item>)
+    )
+}
+
 const Navigation = () => {
     return (
         <Jumbotron fluid>
@@ -73,11 +81,8 @@ const Navigation = () => {
                 <div className="daily-workout">
                     <h1>Today's Workout: Lift and BJJ</h1>
                     <h4>April 24th, 2019</h4>
-                    <ListGroup>
-                        <ListGroup.Item>Bench Press</ListGroup.Item>
-                        <ListGroup.Item>Squat</ListGroup.Item>
-                        <ListGroup.Item>Pullups</ListGroup.Item>
-                        <ListGroup.Item>Full Body Stretch</ListGroup.Item>
+                    <ListGroup variant="flush">
+                        {dailyWorkout()}
                     </ListGroup>
                     <p>
                         <Button variant="primary">Complete</Button>
