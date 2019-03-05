@@ -13,6 +13,7 @@ add interactivity
 allow users to create goals
 allow users to upload/track workouts
 allow users to track/show progress
+i think i want days of the week
 */
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
     super(props)
     this.state = {
       sideMenu: false,
+      date: new Date()
     }
   }
 
@@ -29,6 +31,7 @@ class App extends Component {
   }
 
   render() {
+    console.log(this.state.date)
     return (
       <div style={{ height: '100%' }}>
         <Navigation toggleSideMenu={this.toggleSideMenu} />
