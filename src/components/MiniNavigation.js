@@ -4,8 +4,8 @@ import '../App.css';
 const MiniNavigation = () => {
     return (
         <ul className="mini-nav">
-            <li>Today's Workout</li>
-            <li>Upcoming Workouts</li>
+            <li><a href="#">Today's Workout</a></li>
+            <li><a href="#">Upcoming Workouts</a></li>
         </ul>
     )
 }

@@ -6,6 +6,7 @@ import ProgressBar from 'react-bootstrap/ProgressBar';
 import Table from 'react-bootstrap/Table'
 import ListGroup from 'react-bootstrap/ListGroup';
 import DailyWorkout from './DailyWorkout';
+import MiniNavigation from './MiniNavigation';
 import '../App.css';
 
 
@@ -79,6 +80,7 @@ const Navigation = () => {
         <Jumbotron fluid>
             <Container>
                 <div className="daily-workout">
+                    <MiniNavigation />
                     <h1>Today's Workout: Lift and BJJ</h1>
                     <h4>April 24th, 2019</h4>
                     <ListGroup variant="flush">

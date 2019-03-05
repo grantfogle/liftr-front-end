@@ -16,21 +16,25 @@ const calendar = () => {
 
     return schedule.map(activity => {
         return (
-            <Col className="schedule">
+            // <Col className="schedule">
+            //     <h4>{activity.day}</h4>
+            //     <ul>
+            //         <li>{activity.activity[0]}</li>
+            //     </ul>
+            // </Col>
+            <div className="schedule">
                 <h4>{activity.day}</h4>
-                <ul>
-                    <li>{activity.activity[0]}</li>
-                </ul>
-            </Col>
+                <p>{activity.activity[0]}</p>
+            </div>
         )
     })
 }
 
 const Schedule = () => {
     return (
-        <Row>
+        <div className="calendar">
             {calendar()}
-        </Row>
+        </div>
     );
 }
 
