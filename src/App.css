@@ -48,6 +48,14 @@
   border-radius: 1px;
 }
 
+.mini-nav {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
 .schedule {
   background-color: #ecf0f1;
   height: 100px;
