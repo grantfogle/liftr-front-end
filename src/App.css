@@ -48,6 +48,15 @@
   border-radius: 1px;
 }
 
+.daily-workout {
+  height: 600px;
+  width: 600px;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
 .mini-nav {
   margin-top: 60px;
   display: flex;
@@ -75,7 +84,7 @@
 
 .progressBar {
   margin-bottom: 1em;
-  height: 3em;
+  height: 2em;
   font-size: 2em;
 }
 

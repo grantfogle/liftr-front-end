@@ -5,6 +5,7 @@ import MiniNavigation from './components/MiniNavigation';
 import Goals from './components/Goals';
 import Schedule from './components/Schedule';
 import SideMenu from './components/SideMenu/SideMenu';
+import DailyWorkout from './components/DailyWorkout';
 import Footer from './components/Footer';
 import logo from './logo.svg';
 import './App.css';
@@ -36,8 +37,9 @@ class App extends Component {
     return (
       <div style={{ height: '100%' }}>
         <Navigation toggleSideMenu={this.toggleSideMenu} />
-        <MiniNavigation />
         <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
+        {/* <MiniNavigation /> */}
+        {/* <DailyWorkout /> */}
         <Goals />
         <Schedule />
         <Container>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 //today's date prop
 
@@ -13,6 +14,7 @@ const DailyWorkout = ({ }) => {
                 <li>Pullups</li>
                 <li>Stretch</li>
             </ul>
+            <Button>Complete</Button>
         </div>
     );
 }

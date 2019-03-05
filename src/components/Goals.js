@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import Table from 'react-bootstrap/Table'
+import DailyWorkout from './DailyWorkout';
 import '../App.css';
 
 
@@ -68,16 +69,21 @@ const Navigation = () => {
     return (
         <Jumbotron fluid>
             <Container>
-                <h1>Today's Workout: Lift and BJJ</h1>
-                <h4></h4>
-                <p>
-                    This is a simple hero unit, a simple jumbotron-style component for calling
-                    extra attention to featured content or information.
-                </p>
-                <p>
-                    <Button variant="primary">Complete</Button>
-                </p>
-                {goalProgess()}
+                <div className="daily-workout">
+                    <h1>Today's Workout: Lift and BJJ</h1>
+                    <h4>April 24th, 2019</h4>
+                    <ul>
+                        <li>Bench Press</li>
+                        <li>Squat</li>
+                        <li>Pullups</li>
+                        <li>Stretch</li>
+                    </ul>
+                    <p>
+                        <Button variant="primary">Complete</Button>
+                    </p>
+                    {goalProgess()}
+                </div>
+
             </Container>
         </Jumbotron>
     );
