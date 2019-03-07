@@ -2,38 +2,12 @@ import React from 'react';
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
-import ProgressBar from 'react-bootstrap/ProgressBar';
 import Table from 'react-bootstrap/Table'
 import ListGroup from 'react-bootstrap/ListGroup';
+import CurrentStats from './CurrentStats';
 import DailyWorkout from './DailyWorkout';
 import MiniNavigation from './MiniNavigation';
 import '../App.css';
-
-
-const goalProgess = () => {
-    let goals = [
-        {
-            name: 'Bench Press',
-            current: 185,
-            goal: 225
-        },
-        {
-            name: 'Squat',
-            current: 205,
-            goal: 265
-        },
-        {
-            name: 'Deadlift',
-            current: 275,
-            goal: 315
-        }
-    ]
-
-    return goals.map(goal => {
-        let progress = (goal.current / goal.goal) * 100;
-        return <ProgressBar className="progressBar" now={progress} label={goal.name + ' goal: ' + goal.goal} />
-    })
-}
 
 const workout = () => {
     if (this.props.dailyWorkout) {
@@ -78,7 +52,7 @@ const dailyWorkout = () => {
 const Goals = () => {
     return (
         <Jumbotron fluid>
-            <Container>
+            <Container className="workout-container">
                 <div className="daily-workout">
                     <MiniNavigation />
                     <h1>Today's Workout: Lift and BJJ</h1>
@@ -89,9 +63,8 @@ const Goals = () => {
                     <p>
                         <Button variant="primary">Complete</Button>
                     </p>
-                    {goalProgess()}
                 </div>
-
+                <CurrentStats />
             </Container>
         </Jumbotron>
     );
