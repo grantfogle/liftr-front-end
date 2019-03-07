@@ -55,8 +55,7 @@ const Goals = () => {
             <Container className="workout-container">
                 <div className="daily-workout">
                     <MiniNavigation />
-                    <h1>Today's Workout: Lift and BJJ</h1>
-                    <h4>April 24th, 2019</h4>
+                    <h2>Today's Workout: Lift and BJJ</h2>
                     <ListGroup variant="flush">
                         {dailyWorkout()}
                     </ListGroup>

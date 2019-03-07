@@ -31,6 +31,7 @@ const goalProgress = () => {
 const CurrentStats = () => {
     return (
         <div className="current-stats">
+            <h4>Goal Progress</h4>
             {goalProgress()}
         </div>
     );
