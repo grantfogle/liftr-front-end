@@ -51,7 +51,7 @@ const dailyWorkout = () => {
 const Goals = () => {
     return (
         <Jumbotron fluid className="jumbo">
-            <Container>
+            <Container className="stats-container">
                 <div className="daily-workout">
                     <ul className="mini-nav">
                         <li><a href="#">Today's Workout</a></li>
