@@ -6,7 +6,6 @@ import Table from 'react-bootstrap/Table'
 import ListGroup from 'react-bootstrap/ListGroup';
 import CurrentStats from './CurrentStats';
 import DailyWorkout from './DailyWorkout';
-import MiniNavigation from './MiniNavigation';
 import '../App.css';
 
 const workout = () => {
@@ -52,9 +51,12 @@ const dailyWorkout = () => {
 const Goals = () => {
     return (
         <Jumbotron fluid className="jumbo">
-            <Container className="workout-container">
+            <Container>
                 <div className="daily-workout">
-                    <MiniNavigation />
+                    <ul className="mini-nav">
+                        <li><a href="#">Today's Workout</a></li>
+                        <li><a href="#">Upcoming Workouts</a></li>
+                    </ul>
                     <h2>Today's Workout: Lift and BJJ</h2>
                     <ListGroup variant="flush">
                         {dailyWorkout()}

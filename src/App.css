@@ -38,8 +38,9 @@ header nav {
 .daily-workout {
   height: 600px;
   width: 600px;
-  padding: 1em;
+  /* padding: 1em; */
   border: 1px solid black;
+  /* border-radius: 10px; */
   border-radius: 10px;
   background-color: #fff;
 }
@@ -51,19 +52,20 @@ header nav {
   list-style-type: none;
   justify-content: center;
   align-items: center;
+  background-color: #3498db;
   width: 100%;
-  height: 2em;
+  height: 10%;
   border-bottom: 1px solid black;
+  border-radius: 8px 8px 0 0;
+  /* border-radius: 10px; */
 }
 
-.mini-nav li:first-child {
-  /* border-right: 1px solid black; */
-  /* padding-right: 2em; */
-  /* text-decoration: underline; */
-}
 .mini-nav li {
   width: 50%;
-  text-align: center;
+}
+
+.mini-nav li a {
+  color: #fff;
 }
 
 .calendar {
@@ -89,11 +91,10 @@ header nav {
   text-align: center;
 }
 
-.workout-container {
+/* .workout-container {
   display: flex;
   flex-direction: row;
-
-}
+} */
 
 .current-stats {
   width: 400px;

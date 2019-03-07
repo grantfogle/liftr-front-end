@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
-import MiniNavigation from './components/MiniNavigation';
 import Goals from './components/Goals';
 import Schedule from './components/Schedule';
 import SideMenu from './components/SideMenu/SideMenu';
@@ -39,7 +38,6 @@ class App extends Component {
         <Navigation toggleSideMenu={this.toggleSideMenu} />
         <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
         <div className="main">
-          {/* <MiniNavigation /> */}
           {/* <DailyWorkout /> */}
           <Goals />
           {/* <Schedule /> */}
