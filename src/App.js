@@ -38,17 +38,12 @@ class App extends Component {
       <div style={{ height: '100%' }}>
         <Navigation toggleSideMenu={this.toggleSideMenu} />
         <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
-        {/* <MiniNavigation /> */}
-        {/* <DailyWorkout /> */}
-        <Goals />
-        <Schedule />
-        <Container>
-          <Row>
-            <Col>Stuff</Col>
-            <Col>Stuff</Col>
-            <Col>Stuff</Col>
-          </Row>
-        </Container>
+        <div className="main">
+          {/* <MiniNavigation /> */}
+          {/* <DailyWorkout /> */}
+          <Goals />
+          <Schedule />
+        </div>
         <Footer />
       </div>
     );

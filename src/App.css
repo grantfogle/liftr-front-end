@@ -1,3 +1,6 @@
+header nav {
+  background-color: #3498db;
+}
 .hamburger {
   position: fixed;
   top: 0;
@@ -22,6 +25,14 @@
   width: 100%;
   border: 2px solid white;
   border-radius: 1px;
+}
+
+.jumbo {
+  background-color: transparent;
+}
+
+.main {
+  background-color: #ecf0f1;
 }
 
 .daily-workout {

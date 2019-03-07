@@ -6,7 +6,8 @@ const Navigation = ({ toggleSideMenu }) => {
     return (
         <header>
             <nav>
-                <Navbar fixed="top" bg="dark" variant="dark">
+                {/* <Navbar fixed="top" bg="dark" variant="dark"> */}
+                <Navbar fixed="top">
                     <Navbar.Brand href="#home">
                         Liftr
                     </Navbar.Brand>
