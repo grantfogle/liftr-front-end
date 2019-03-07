@@ -75,7 +75,7 @@ const dailyWorkout = () => {
     )
 }
 
-const Navigation = () => {
+const Goals = () => {
     return (
         <Jumbotron fluid>
             <Container>
@@ -97,4 +97,4 @@ const Navigation = () => {
     );
 }
 
-export default Navigation;
+export default Goals;
