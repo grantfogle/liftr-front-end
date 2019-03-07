@@ -42,7 +42,7 @@ class App extends Component {
           {/* <MiniNavigation /> */}
           {/* <DailyWorkout /> */}
           <Goals />
-          <Schedule />
+          {/* <Schedule /> */}
         </div>
         <Footer />
       </div>
