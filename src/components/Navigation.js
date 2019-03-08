@@ -8,7 +8,7 @@ const Navigation = ({ toggleSideMenu }) => {
             <nav>
                 {/* <Navbar fixed="top" bg="dark" variant="dark"> */}
                 <Navbar fixed="top">
-                    <Navbar.Brand href="#home">
+                    <Navbar.Brand href="#home" className="text-white">
                         Liftr
                     </Navbar.Brand>
                     <div className="hamburger" onClick={toggleSideMenu}>
