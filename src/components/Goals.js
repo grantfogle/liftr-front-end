@@ -61,9 +61,9 @@ const Goals = () => {
                     <ListGroup variant="flush">
                         {dailyWorkout()}
                     </ListGroup>
-                    <p>
-                        <Button variant="primary">Complete</Button>
-                    </p>
+                    <div className="workout-button">
+                        <Button variant="primary" className="complete-workout-btn">Complete</Button>
+                    </div>
                 </div>
                 <CurrentStats />
             </Container>
