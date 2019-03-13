@@ -42,12 +42,10 @@ class App extends Component {
           <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
           <div className="main">
             {/* <DailyWorkout /> */}
-            <div>
-              {/* <Route exact path="/" component={() => <Home />} /> */}
-              <Route exact path="/goal" component={() => <Goals />} />
-              <Route exact path="/new-goal" component={() => <NewGoals />} />
-            </div>
-            <Goals />
+            {/* <Route exact path="/" component={() => <Home />} /> */}
+            <Route exact path="/goal" component={() => <Goals />} />
+            <Route exact path="/new-goal" component={() => <NewGoals />} />
+            {/* <Goals /> */}
             {/* <Schedule /> */}
           </div>
           <Footer />
