@@ -1,17 +1,22 @@
 import React from 'react';
 import './SideMenu.css';
+import { Link } from 'react-router-dom';
 
 const SideMenu = ({ sideMenu, toggleSideMenu }) => {
     return (
         <nav className={sideMenu ? "side-menu" : "side-menu-hidden"}>
             <ul>
                 <li onClick={toggleSideMenu}>Close X</li>
-                <li><a href="#"></a>Add a new goal</li>
-                <li><a href="#"></a>Add a new workout</li>
-                <li><a href="#"></a>Track Progress</li>
-                <li><a href="#"></a>Record a new workout</li>
-            </ul>
-        </nav>
+                <Link to="/new-goal">
+                    <li>Add a new goal</li>
+                </Link>
+                <Link to="/goals">
+                    <li>Add a new workout</li>
+                </Link>
+                <li>Track Progress</li>
+                <li>Record a new workout</li >
+            </ul >
+        </nav >
     )
 }
 

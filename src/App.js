@@ -6,6 +6,7 @@ import Schedule from './components/Schedule';
 import SideMenu from './components/SideMenu/SideMenu';
 import DailyWorkout from './components/DailyWorkout';
 import Footer from './components/Footer';
+import NewGoals from './components/NewGoals';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -42,8 +43,9 @@ class App extends Component {
           <div className="main">
             {/* <DailyWorkout /> */}
             <div>
-              <Route exact path="/" component={() => <Home />} />
+              {/* <Route exact path="/" component={() => <Home />} /> */}
               <Route exact path="/goal" component={() => <Goals />} />
+              <Route exact path="/new-goal" component={() => <NewGoals />} />
             </div>
             <Goals />
             {/* <Schedule /> */}
