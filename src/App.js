@@ -35,16 +35,22 @@ class App extends Component {
   render() {
     console.log(this.state.date)
     return (
-      <div style={{ height: '100%' }}>
-        <Navigation toggleSideMenu={this.toggleSideMenu} />
-        <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
-        <div className="main">
-          {/* <DailyWorkout /> */}
-          <Goals />
-          {/* <Schedule /> */}
+      <Router>
+        <div style={{ height: '100%' }}>
+          <Navigation toggleSideMenu={this.toggleSideMenu} />
+          <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
+          <div className="main">
+            {/* <DailyWorkout /> */}
+            <div>
+              <Route exact path="/" component={() => <Home />} />
+              <Route exact path="/goal" component={() => <Goals />} />
+            </div>
+            <Goals />
+            {/* <Schedule /> */}
+          </div>
+          <Footer />
         </div>
-        <Footer />
-      </div>
+      </Router>
     );
   }
 }
