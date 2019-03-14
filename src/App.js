@@ -43,7 +43,7 @@ class App extends Component {
           <div className="main">
             {/* <DailyWorkout /> */}
             {/* <Route exact path="/" component={() => <Home />} /> */}
-            <Route exact path="/goal" component={() => <Goals />} />
+            <Route exact path="/" component={() => <Goals />} />
             <Route exact path="/new-goal" component={() => <NewGoals />} />
             {/* <Goals /> */}
             {/* <Schedule /> */}
