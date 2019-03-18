@@ -40,7 +40,7 @@ header nav {
 
 .main {
   background-color: #ecf0f1;
-  min-height: 80vh;
+  min-height: 90vh;
 }
 
 .daily-workout {
@@ -89,6 +89,12 @@ header nav {
 
 .mini-nav li a {
   color: #fff;
+}
+
+.login-form {
+  margin-top: 60px;
+  height: 400px;
+  width: 50%;
 }
 
 .calendar {

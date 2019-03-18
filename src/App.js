@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
 import Goals from './components/Goals';
 import Schedule from './components/Schedule';
+import Login from './components/Login';
 import SideMenu from './components/SideMenu/SideMenu';
 import DailyWorkout from './components/DailyWorkout';
 import Footer from './components/Footer';
@@ -44,6 +45,7 @@ class App extends Component {
             {/* <DailyWorkout /> */}
             {/* <Route exact path="/" component={() => <Home />} /> */}
             <Route exact path="/" component={() => <Goals />} />
+            <Route exact path="/login" component={() => <Login />} />
             <Route exact path="/new-goal" component={() => <NewGoals />} />
             {/* <Goals /> */}
             {/* <Schedule /> */}
