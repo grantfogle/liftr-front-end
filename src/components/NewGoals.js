@@ -9,11 +9,11 @@ const NewGoals = () => {
     //table input
 
     return (
-        <div className="new-goals">
-            {/* <Container className="new-goals"> */}
+        // <div className="new-goals">
+        <Container className="new-goals">
             <h1>Create new workout</h1>
-            {/* </Container> */}
-        </div>
+        </Container>
+        // </div>
     );
 }
 
