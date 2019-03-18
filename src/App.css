@@ -60,6 +60,10 @@ header nav {
 .daily-workout h2 {
   padding: 1em;
 }
+.new-goals {
+  margin-top: 60px;
+  height: 40vh;
+}
 
 .workout-button {
   margin-top: 2em;
