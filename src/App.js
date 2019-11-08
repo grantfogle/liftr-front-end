@@ -35,23 +35,24 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.state.date)
+    // console.log(this.state.date)
     return (
-      <Router>
-        <div style={{ height: '100%' }}>
+      <Router style={{ height: '100%' }}>
+        <Login />
+        {/* <div >
           <Navigation toggleSideMenu={this.toggleSideMenu} />
           <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
-          <div className="main">
+          <div className="main"> */}
             {/* <DailyWorkout /> */}
             {/* <Route exact path="/" component={() => <Home />} /> */}
-            <Route exact path="/" component={() => <Goals />} />
+            {/* <Route exact path="/" component={() => <Goals />} />
             <Route exact path="/login" component={() => <Login />} />
-            <Route exact path="/new-goal" component={() => <NewGoals />} />
+            <Route exact path="/new-goal" component={() => <NewGoals />} /> */}
             {/* <Goals /> */}
             {/* <Schedule /> */}
-          </div>
+          {/* </div>
           <Footer />
-        </div>
+        </div> */}
       </Router>
     );
   }

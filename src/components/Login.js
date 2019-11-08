@@ -7,17 +7,17 @@ import '../App.css';
 class Login extends Component {
     render() {
         return (
-            <Form className="login-form">
-                <Form.Row>
-                    <Form.Group as={Col} controlId="formGridEmail">
-                        <Form.Label>Email</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                    </Form.Group>
-                </Form.Row>
-                <Button variant="primary" type="submit">
-                    Submit
-                </Button>
-            </Form>
+            <div class="login-screen">
+                <div class="login-container text-white">
+                    <h1 class="login-header">GAINZ</h1>
+                    <div class="login-subheader d-flex flex-row justify-between">
+                        <p>Login</p>
+                        <p>Sign Up</p>
+                    </div>
+                    <div class="login-form">
+                    </div>
+                </div>
+            </div>
         );
     }
 }
