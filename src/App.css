@@ -19,3 +19,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.login-form-field {
+  border: none;
+  border-radius: 20px;
+  padding: .5em 1em;
+}
+
+.login-form-submit {
+  background-color: #fff;
+  color: #1abc9c;
+  margin-top: .5em;
+}

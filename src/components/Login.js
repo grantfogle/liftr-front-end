@@ -14,8 +14,12 @@ class Login extends Component {
                         <p>Login</p>
                         <p>Sign Up</p>
                     </div>
-                    <div class="login-form">
+                    <div class="login-form d-flex flex-column">
+                        <input class="login-form-field mb-2" type="text" placeholder="Email"></input>
+                        <input class="login-form-field" type="text" placeholder="Password"></input>
+                        <button type="submit" class="login-form-field login-form-submit">Submit</button>
                     </div>
+                    {/* Handle load speed */}
                 </div>
             </div>
         );
