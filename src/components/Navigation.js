@@ -5,13 +5,13 @@ import '../App.css';
 const Navigation = ({ toggleSideMenu }) => {
     return (
         <header class="header">
-            <nav>
+            <nav class="d-flex justify-content-between align-items-center" >
                 {/* <Navbar fixed="top" bg="dark" variant="dark"> */}
-                <Navbar fixed="top">
-                    <Navbar.Brand href="#home" className="text-white">
-                        GAINZ
-                    </Navbar.Brand>
-                </Navbar>
+                <div class="logo text-white">GAINZ</div>
+                <div>
+                    <input placeholder="Search workouts" />
+                </div>
+                <p>User placeholder</p>
             </nav>
         </header>
     )
