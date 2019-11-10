@@ -3,7 +3,10 @@ import Navigation from './Navigation';
 import '../App.css';
 
 class Main extends Component {
+    state = {
+    };
     render() {
+
         return (
             <div class="main">
                 <Navigation />
