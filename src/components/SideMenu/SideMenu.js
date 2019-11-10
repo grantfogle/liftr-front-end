@@ -7,9 +7,6 @@ const SideMenu = ({ sideMenu, toggleSideMenu }) => {
         <nav className={sideMenu ? "side-menu" : "side-menu-hidden"}>
             <ul>
                 <li onClick={toggleSideMenu}>Close X</li>
-                <Link to="/new-goal">
-                    <li>Add a new goal</li>
-                </Link>
                 <Link to="/goals">
                     <li>Add a new workout</li>
                 </Link>

@@ -4,18 +4,13 @@ import '../App.css';
 
 const Navigation = ({ toggleSideMenu }) => {
     return (
-        <header>
+        <header class="header">
             <nav>
                 {/* <Navbar fixed="top" bg="dark" variant="dark"> */}
                 <Navbar fixed="top">
                     <Navbar.Brand href="#home" className="text-white">
-                        Liftr
+                        GAINZ
                     </Navbar.Brand>
-                    <div className="hamburger" onClick={toggleSideMenu}>
-                        <div className="line"></div>
-                        <div className="line"></div>
-                        <div className="line"></div>
-                    </div>
                 </Navbar>
             </nav>
         </header>

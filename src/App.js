@@ -3,11 +3,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation';
 import Goals from './components/Goals';
 import Schedule from './components/Schedule';
+import Main from './components/Main.js';
 import Login from './components/Login';
 import SideMenu from './components/SideMenu/SideMenu';
 import DailyWorkout from './components/DailyWorkout';
 import Footer from './components/Footer';
-import NewGoals from './components/NewGoals';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -38,21 +38,22 @@ class App extends Component {
     // console.log(this.state.date)
     return (
       <Router style={{ height: '100%' }}>
-        <Login />
-        {/* <div >
+        <div>
+          {/* <div >
           <Navigation toggleSideMenu={this.toggleSideMenu} />
           <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
           <div className="main"> */}
-            {/* <DailyWorkout /> */}
-            {/* <Route exact path="/" component={() => <Home />} /> */}
-            {/* <Route exact path="/" component={() => <Goals />} />
-            <Route exact path="/login" component={() => <Login />} />
+          {/* <DailyWorkout /> */}
+          <Route exact path="/" component={() => <Login />} />
+          <Route exact path="/main" component={() => <Main />} />
+          {/* <Route exact path="/login" component={() => <Login />} />
             <Route exact path="/new-goal" component={() => <NewGoals />} /> */}
-            {/* <Goals /> */}
-            {/* <Schedule /> */}
+          {/* <Goals /> */}
+          {/* <Schedule /> */}
           {/* </div>
           <Footer />
         </div> */}
+        </div>
       </Router>
     );
   }
