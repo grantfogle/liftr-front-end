@@ -1,17 +1,13 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar';
+import SearchBar from './SearchBar/SearchBar';
 import './TopNav.scss';
 
 const TopNav = ({ toggleSideMenu }) => {
     return (
-        <header class="header">
-            <nav class="d-flex justify-content-between align-items-center" >
-                {/* <Navbar fixed="top" bg="dark" variant="dark"> */}
-                <div class="logo text-white">GAINZ</div>
-
-                <div>
-                    <input placeholder="Search workouts" />
-                </div>
+        <header className="top-nav">
+            <nav className="top-nav__container" >
+                <h4 className="top-nav__container__logo">GAINZ</h4>
+                <SearchBar />
                 <p>User placeholder</p>
             </nav>
         </header>

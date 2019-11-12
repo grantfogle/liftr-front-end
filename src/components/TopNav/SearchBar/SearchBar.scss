@@ -1,0 +1,17 @@
+.seachbar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-width: 300px;
+    &__icon {
+        margin: 0;
+    }
+    input {
+        border: none;
+        width: 600px;
+        min-width: 250px;
+        &:focus {
+            outline: 2px solid #1abc9c;
+        }
+    }
+}

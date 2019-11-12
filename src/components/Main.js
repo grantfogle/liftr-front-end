@@ -12,9 +12,7 @@ class Main extends Component {
             <div class="main">
                 <TopNav />
                 <SideNav />
-                <div class="">
-                    <p>Catjs</p>
-                </div>
+                {/* <ProgressDashboard /> */}
             </div>
         );
     }

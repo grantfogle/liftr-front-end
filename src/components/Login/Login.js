@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
 import { Link } from 'react-router-dom';
-import '../App.css';
+import './Login.scss';
 
 class Login extends Component {
     render() {
