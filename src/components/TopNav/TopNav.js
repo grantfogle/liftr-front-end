@@ -1,13 +1,14 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import '../App.css';
+import './TopNav.scss';
 
-const Navigation = ({ toggleSideMenu }) => {
+const TopNav = ({ toggleSideMenu }) => {
     return (
         <header class="header">
             <nav class="d-flex justify-content-between align-items-center" >
                 {/* <Navbar fixed="top" bg="dark" variant="dark"> */}
                 <div class="logo text-white">GAINZ</div>
+
                 <div>
                     <input placeholder="Search workouts" />
                 </div>
@@ -17,4 +18,4 @@ const Navigation = ({ toggleSideMenu }) => {
     )
 }
 
-export default Navigation;
+export default TopNav;

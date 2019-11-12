@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
+import TopNav from './TopNav/TopNav';
 import SideNav from './SideNav/SideNav';
 import '../App.css';
 
@@ -10,7 +10,7 @@ class Main extends Component {
 
         return (
             <div class="main">
-                <Navigation />
+                <TopNav />
                 <SideNav />
                 <div class="">
                     <p>Catjs</p>

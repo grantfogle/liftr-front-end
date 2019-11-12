@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Navigation from './components/Navigation';
 import Goals from './components/Goals';
 import Schedule from './components/Schedule';
 import Main from './components/Main.js';
@@ -39,11 +38,6 @@ class App extends Component {
     return (
       <Router style={{ height: '100%' }}>
         <div>
-          {/* <div >
-          <Navigation toggleSideMenu={this.toggleSideMenu} />
-          <SideMenu sideMenu={this.state.sideMenu} toggleSideMenu={this.toggleSideMenu} />
-          <div className="main"> */}
-          {/* <DailyWorkout /> */}
           <Route exact path="/" component={() => <Login />} />
           <Route exact path="/main" component={() => <Main />} />
           {/* <Route exact path="/login" component={() => <Login />} />
