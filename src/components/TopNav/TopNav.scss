@@ -12,9 +12,19 @@
         &__logo {
             color: #1abc9c;
             margin: 0;
+            width: 230px;
+        }
+        &__user{
+            display: flex;
+            align-items: center;
+            width: 100px;
+            &__icon {
+                margin-right: 1em;
+            }
+            p {
+                margin: 0;
+            }
         }
     }
-    p {
-        margin: 0;
-    }
+    
 }

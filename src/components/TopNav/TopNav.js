@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from './SearchBar/SearchBar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './TopNav.scss';
 
 const TopNav = ({ toggleSideMenu }) => {
@@ -8,7 +9,10 @@ const TopNav = ({ toggleSideMenu }) => {
             <nav className="top-nav__container" >
                 <h4 className="top-nav__container__logo">GAINZ</h4>
                 <SearchBar />
-                <p>User placeholder</p>
+                <div class="top-nav__container__user">
+                    <FontAwesomeIcon className="top-nav__container__user__icon" icon="user" />
+                    <p>User</p>
+                </div>
             </nav>
         </header>
     )

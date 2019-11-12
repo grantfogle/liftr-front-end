@@ -1,19 +1,20 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './SideNav.scss';
 
 const SideNav = ({ toggleSideMenu }) => {
     return (
         <div class="side-nav">
-            <h6>Dashboard</h6>
-            <h6>Training</h6>
+            <h5><FontAwesomeIcon icon="chart-line" /> Dashboard</h5>
+            <h5>Training</h5>
             <ul>
-                <li>Find Workout</li>
-                <li>Track Workout</li>
-                <li>Update Goals</li>
+                <li><FontAwesomeIcon icon="map-marker-alt" /> Find Workout</li>
+                <li><FontAwesomeIcon icon="pen" /> Track Workout</li>
+                <li><FontAwesomeIcon icon="dumbbell" /> Update Goals</li>
             </ul>
-            <h6>My profile</h6>
+            <h5>My profile</h5>
             <ul>
-                <li>Settings</li>
+                <li><FontAwesomeIcon icon="cog" /> Settings</li>
             </ul>
         </div>
     )

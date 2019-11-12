@@ -5,6 +5,10 @@ import Footer from './components/Footer';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faSearch, faUser, faChartLine, faCog, faDumbbell, faPen, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+{/* <i class="fas fa-tachometer-alt"></i> */}
 class App extends Component {
 
   constructor(props) {
@@ -14,12 +18,14 @@ class App extends Component {
       date: new Date()
     }
   }
+  
 
   toggleSideMenu = () => {
     this.setState({ sideMenu: !this.state.sideMenu })
   }
 
   render() {
+    library.add(faChartLine, faUser, faSearch, faCog, faDumbbell, faPen, faMapMarkerAlt);
     return (
       <Router style={{ height: '100%' }}>
         <div>

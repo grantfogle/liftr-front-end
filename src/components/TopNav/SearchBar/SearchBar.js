@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './SearchBar.scss';
 
 class SearchBar extends Component {
@@ -9,7 +10,7 @@ class SearchBar extends Component {
     render() {
         return (
             <div className="seachbar">
-                <div className="searchbar__icon">0</div>
+                <FontAwesomeIcon className="mr-1" icon="search" />
                 <input type="text" placeholder="Search..."></input>
             </div>
         );
