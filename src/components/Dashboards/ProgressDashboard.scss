@@ -1,4 +1,7 @@
 .progress-dashboard {
     width: 100%;
     padding-top: 2em;
+    &__graph {
+        width: 50%;
+    }
 }
