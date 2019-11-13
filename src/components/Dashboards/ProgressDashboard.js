@@ -41,7 +41,7 @@ class ProgressDashboard extends Component {
                     <Line
                         data={data}
                         height={400}
-                        width={400}
+                        // width={400}
                         options={{ maintainAspectRatio: false }} />
                 </div>
             </div >
