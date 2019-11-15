@@ -1,5 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 import './SideNav.scss';
 
 const SideNav = ({ toggleSideMenu }) => {
@@ -8,7 +9,9 @@ const SideNav = ({ toggleSideMenu }) => {
             <h6><FontAwesomeIcon icon="chart-line" /> Dashboard</h6>
             <h6>Training</h6>
             <ul>
-                <li><FontAwesomeIcon icon="map-marker-alt" /> Find Workout</li>
+                <Link to="/workouts">
+                    <li><FontAwesomeIcon icon="map-marker-alt" /> Find Workout</li>
+                </Link>
                 <li><FontAwesomeIcon icon="pen" /> Track Workout</li>
                 <li><FontAwesomeIcon icon="dumbbell" /> Update Goals</li>
             </ul>
