@@ -1,0 +1,22 @@
+.workout {
+    height: 60px;
+    width: 100%;
+    margin: .5em;
+    border: 1px solid #dfdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    &__icon {
+        width: 10%;
+    }
+    &__name {
+        width: 30%;
+    }
+    &__score {
+        width: 15%;
+    }
+    &__type {
+        width: 15%;
+    }
+}

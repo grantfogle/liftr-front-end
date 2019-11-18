@@ -7,7 +7,7 @@ import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 // import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faSearch, faUser, faChartLine, faCog, faDumbbell, faPen, faMapMarkerAlt} from '@fortawesome/free-solid-svg-icons'
+import { faSearch, faUser, faChartLine, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning} from '@fortawesome/free-solid-svg-icons'
 {/* <i class="fas fa-tachometer-alt"></i> */}
 class App extends Component {
 
@@ -25,13 +25,14 @@ class App extends Component {
   }
 
   render() {
-    library.add(faChartLine, faUser, faSearch, faCog, faDumbbell, faPen, faMapMarkerAlt);
+    library.add(faChartLine, faUser, faSearch, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning);
     return (
       <Router style={{ height: '100%' }}>
         <div>
           <Route exact path="/" component={() => <Login />} />
           <Route exact path="/main" component={() => <Main />} />
           <Route exact path="/workouts" component={() => <Workouts />} />
+          {/* <Route path='/workouts' render={() => <Workouts />} /> */}
         </div>
       </Router>
     );

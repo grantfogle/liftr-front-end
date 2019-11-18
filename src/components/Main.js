@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import TopNav from './TopNav/TopNav';
 import SideNav from './SideNav/SideNav';
 import ProgressDashboard from './Dashboards/ProgressDashboard';
+import Workouts from './Workouts/Workouts';
 import './Main.scss';
 // i think i need to add another router inside this component.
 class Main extends Component {
@@ -13,7 +14,8 @@ class Main extends Component {
                 <TopNav />
                 <div className="main__container">
                     <SideNav />
-                    <ProgressDashboard />
+                    {/* <ProgressDashboard /> */}
+                    <Workouts />
                 </div>
             </div>
         );

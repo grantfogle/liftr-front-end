@@ -1,0 +1,23 @@
+.workouts {
+    margin-top: 2em;
+    width: 80%;
+    table {
+        width: 100%;
+        tr {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__icon-header {
+        width: 10%;
+    }
+    &__name-header {
+        width: 30%;
+    }
+    &__score-header {
+        width: 15%;
+    }
+    &__type-header {
+        width: 15%;
+    }
+}
