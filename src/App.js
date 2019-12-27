@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Main from './components/Main.js';
 import Login from './components/Login/Login';
 import Workouts from './components/Workouts/Workouts';
+import Goals from './components/Goals/Goals';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
@@ -32,6 +33,7 @@ class App extends Component {
           <Route exact path="/" component={() => <Login />} />
           <Route exact path="/main" component={() => <Main />} />
           <Route exact path="/workouts" component={() => <Workouts />} />
+          <Route exact path="/goals" component={() => <Goals />} />
           {/* <Route path='/workouts' render={() => <Workouts />} /> */}
         </div>
       </Router>

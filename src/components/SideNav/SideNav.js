@@ -13,7 +13,9 @@ const SideNav = ({ toggleSideMenu }) => {
                     <li><FontAwesomeIcon icon="map-marker-alt" /> Find Workout</li>
                 </Link>
                 <li><FontAwesomeIcon icon="pen" /> Track Workout</li>
-                <li><FontAwesomeIcon icon="dumbbell" /> Update Goals</li>
+                <Link to="/goals">
+                    <li><FontAwesomeIcon icon="dumbbell" /> Update Goals</li>
+                </Link>
             </ul>
             <h6>My profile</h6>
             <ul>
