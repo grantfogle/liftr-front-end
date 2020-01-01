@@ -31,9 +31,10 @@ class App extends Component {
       <Router style={{ height: '100%' }}>
         <div>
           <Route exact path="/" component={() => <Login />} />
-          <Route exact path="/main" component={() => <Main />} />
-          <Route exact path="/workouts" component={() => <Workouts />} />
-          <Route exact path="/goals" component={() => <Goals />} />
+          <Route path="/main" component={() => <Main />} />
+          <Route path="/workouts" component={() => <Workouts />} />
+          {/* <Route path="/dashboard" component={() => <ProgressDashboard />} /> */}
+          <Route path="/goals" component={() => <Goals />} />
           {/* <Route path='/workouts' render={() => <Workouts />} /> */}
         </div>
       </Router>
