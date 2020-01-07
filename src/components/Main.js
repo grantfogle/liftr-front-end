@@ -4,25 +4,20 @@ import SideNav from './SideNav/SideNav';
 import ProgressDashboard from './Dashboards/ProgressDashboard';
 import Workouts from './Workouts/Workouts';
 import Goals from './Goals/Goals';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Route, Switch } from 'react-router-dom';
 import './Main.scss';
-// i think i need to add another router inside this component.
 class Main extends Component {
-    state = {
-    };
     render() {
         return (
             <div className="main">
                 <TopNav />
                 <div className="main__container">
                     <SideNav />
-                    <Router>
-                        <div>
-                            <Route path="/main/dashboard" render={() => <ProgressDashboard />} />
-                            <Route path="/main/workouts" render={() => <Workouts />} />
-                            <Route path="/main/goals" render={() => <Goals />} />
-                        </div>
-                    </Router>
+                    <Switch>
+                        <Route path="/main/dashboard" component={ProgressDashboard} />
+                        <Route path="/main/workouts" component={Workouts} />
+                        <Route path="/main/goals" component={Goals} />
+                    </Switch>
                 </div>
             </div>
         );
