@@ -12,10 +12,10 @@ import './Goals.scss';
 //     {exercise: 'Deadlift', currentMax: 165, currentOneRepMax: this.currentMax + 1.25},
 // ]
 
-const Goals = ({}) => {
+const Goals = ({ }) => {
     return (
         <div class="goals">
-            <h1>Cats</h1>
+            <h1>Cats are freaking cool maaaaaaaaan</h1>
             {/* bring in a chart */}
             {/* get users goals
             get current stats */}
