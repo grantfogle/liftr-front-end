@@ -1,10 +1,15 @@
 import React from 'react';
 import './Goal.scss';
 
-const Goal = ({ }) => {
+const Goal = ({ goal }) => {
+    let { name, category, timeline, current } = goal;
     return (
         <div class="goal">
-        </div>
+            <p>asdfasd</p>
+            <h2>{name} <span>{category}</span></h2>
+            <p>{timeline}</p>
+            <p>{current}</p>
+        </div >
     );
 }
 

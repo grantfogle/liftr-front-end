@@ -12,13 +12,14 @@ class Main extends Component {
             <div className="main">
                 <TopNav />
                 <div className="main__container">
-                    {/* <SideNav /> */}
+                    <SideNav />
                     <div class="main__container__primary-content">
-                        <Switch>
+                        <Goals />
+                        {/* <Switch>
                             <Route path="/goals" component={Goals} />
                             <Route path="/dashboard" component={Dashboard} />
                             <Route path="/workouts" component={Workouts} />
-                        </Switch>
+                        </Switch> */}
                     </div>
                 </div>
             </div >

@@ -1,21 +1,21 @@
 import React from 'react';
-import TopNav from '../TopNav/TopNav'
+import Goal from './Goal/Goal';
 import './Goals.scss';
 
-// let currentStats = [
-//     {exercise: 'Bench Press', currentMax: 165, currentOneRepMax: this.currentMax + 1.25},
-//     {exercise: 'Squat', currentMax: 165, currentOneRepMax: this.currentMax + 1.25},
-//     {exercise: 'Deadlift', currentMax: 165, currentOneRepMax: this.currentMax + 1.25},
-// ]
+let currentGoals = [
+    { name: 'Bench Press', category: 'Strength', currentStat: '185', goal: '420', timeline: 'Dec 21, 2020' },
+    { name: 'Squat', category: 'Strength', currentStat: '225', goal: '315', timeline: 'Dec 21, 2020' },
+    { name: 'Deadlift', category: 'Strength', currentStat: '305', goal: '405', timeline: 'Dec 21, 2020' },
+    { name: 'Half Marathon', category: 'Cardio', currentStat: '2:21', goal: '2:00', timeline: 'Dec 21, 2020' },
+    { name: 'Lose 10 Pounds', category: 'Weight Loss', currentStat: '185', goal: '175', timeline: 'Jan 21, 2021' },
+];
 
-const Goals = ({ }) => {
+let displayGoals = (goals) => goals.map((goal) => <Goal goal={goal} />);
+
+const Goals = () => {
     return (
         <div class="goals">
-            <TopNav />
-            {/* <Goal goal={goal} /> */}
-            {/* bring in a chart */}
-            {/* get users goals
-            get current stats */}
+            {displayGoals(currentGoals)}
         </div>
     );
 }
