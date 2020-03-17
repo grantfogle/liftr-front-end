@@ -1,9 +1,5 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Table from 'react-bootstrap/Table'
-import ListGroup from 'react-bootstrap/ListGroup';
+import TopNav from '../TopNav/TopNav'
 import './Goals.scss';
 
 // let currentStats = [
@@ -15,7 +11,8 @@ import './Goals.scss';
 const Goals = ({ }) => {
     return (
         <div class="goals">
-            <h1>Cats are freaking cool maaaaaaaaan</h1>
+            <TopNav />
+            {/* <Goal goal={goal} /> */}
             {/* bring in a chart */}
             {/* get users goals
             get current stats */}
