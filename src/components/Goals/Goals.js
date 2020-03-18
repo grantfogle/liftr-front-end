@@ -14,7 +14,7 @@ let displayGoals = (goals) => goals.map((goal) => <Goal goal={goal} />);
 
 const Goals = () => {
     return (
-        <div class="goals">
+        <div class='goals'>
             {displayGoals(currentGoals)}
         </div>
     );
