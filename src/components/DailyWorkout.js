@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button';
 
 const DailyWorkout = ({ }) => {
     return (
-        <div class="daily-workout">
+        <div class='daily-workout'>
             <h2>Today's Workout: Lift Weights</h2>
             <h4>April 24th, 2019</h4>
             <ul>
