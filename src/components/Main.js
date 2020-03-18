@@ -9,16 +9,16 @@ import './Main.scss';
 class Main extends Component {
     render() {
         return (
-            <div className="main">
+            <div className='main'>
                 <TopNav />
-                <div className="main__container">
+                <div className='main__container'>
                     <SideNav />
-                    <div class="main__container__primary-content">
+                    <div class='main__container__primary-content'>
                         <Goals />
                         {/* <Switch>
-                            <Route path="/goals" component={Goals} />
-                            <Route path="/dashboard" component={Dashboard} />
-                            <Route path="/workouts" component={Workouts} />
+                            <Route path='/goals' component={Goals} />
+                            <Route path='/dashboard' component={Dashboard} />
+                            <Route path='/workouts' component={Workouts} />
                         </Switch> */}
                     </div>
                 </div>

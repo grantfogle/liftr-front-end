@@ -16,13 +16,13 @@ const calendar = () => {
 
     return schedule.map(activity => {
         return (
-            // <Col className="schedule">
+            // <Col className='schedule'>
             //     <h4>{activity.day}</h4>
             //     <ul>
             //         <li>{activity.activity[0]}</li>
             //     </ul>
             // </Col>
-            <div className="schedule">
+            <div className='schedule'>
                 <h4>{activity.day}</h4>
                 <p>{activity.activity[0]}</p>
             </div>
@@ -32,7 +32,7 @@ const calendar = () => {
 
 const Schedule = () => {
     return (
-        <div className="calendar">
+        <div className='calendar'>
             {calendar()}
         </div>
     );

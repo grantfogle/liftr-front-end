@@ -21,10 +21,10 @@ class App extends Component {
     library.add(faChartLine, faUser, faSearch, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning);
     return (
       <Router>
-        <div className="app">
-          <Route path="/login" component={Login} />
-          <Route path="/main" component={Main} />
-          <Route path="/goals" component={Goals} />
+        <div className='app'>
+          <Route path='/login' component={Login} />
+          <Route path='/main' component={Main} />
+          <Route path='/goals' component={Goals} />
         </div>
       </Router>
     );

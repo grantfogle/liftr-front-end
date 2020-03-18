@@ -23,14 +23,14 @@ const goalProgress = () => {
 
     return goals.map(goal => {
         let progress = (goal.current / goal.goal) * 100;
-        return <ProgressBar className="progressBar" now={progress} label={goal.name + ' goal: ' + goal.goal} />
+        return <ProgressBar className='progressBar' now={progress} label={goal.name + ' goal: ' + goal.goal} />
     })
 }
 
 
 const CurrentStats = () => {
     return (
-        <div className="current-stats">
+        <div className='current-stats'>
             <h4>Goal Progress</h4>
             {goalProgress()}
         </div>

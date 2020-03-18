@@ -35,9 +35,9 @@ class ProgressDashboard extends Component {
             ]
         };
         return (
-            <div className="progress-dashboard">
+            <div className='progress-dashboard'>
                 <h1>Here's your progress</h1>
-                <div class="progress-dashbord__graph">
+                <div class='progress-dashbord__graph'>
                     <Line
                         data={data}
                         height={400}
