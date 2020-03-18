@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Goal.scss';
 
 const getPercentage = (numerator, denominator) => {
@@ -16,8 +17,8 @@ const Goal = ({ goal }) => {
             </div>
             <div className='goal__stats'>
                 <p className=''>{getPercentage(currentStat, goalStat)}</p>
-                <button className='goal__stats__button'>View Workout</button>
-                <div className='goal__stats__settings'></div>
+                <button className='goal__stats__button'>View Progress</button>
+                <FontAwesomeIcon icon='ellipsis-v' />
             </div>
         </div>
     );

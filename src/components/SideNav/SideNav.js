@@ -18,7 +18,7 @@ class SideNav extends Component {
                 <h6>
                     <Link to='/dashboard'>
                         <FontAwesomeIcon icon='chart-line' /> Dashboard
-                </Link>
+                    </Link>
                 </h6>
                 <h6>Training</h6>
                 <ul>
