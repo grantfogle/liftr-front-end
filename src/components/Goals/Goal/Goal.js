@@ -16,8 +16,16 @@ class Workout extends Component {
     }
     toggleWorkoutView = () => {
         this.setState({ showWorkout: !this.state.showWorkout });
-        console.log('cats');
     };
+    showWorkout() {
+        if (this.state.showWorkout) {
+            return (
+                <div className='workout__view'>
+                    <h4>Workout bruh</h4>
+                </div>
+            )
+        }
+    }
     render() {
         const { name, category, timeline, currentStat, goalStat } = this.props.workout;
         return (
@@ -37,9 +45,7 @@ class Workout extends Component {
                     </div>
 
                 </div>
-                <div className={this.state.showWorkout ? 'workout__show' : 'workout__hide'}>
-                    <h4>Workout bruh</h4>
-                </div>
+                {this.showWorkout()}
             </div>
         );
     }
