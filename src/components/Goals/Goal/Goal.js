@@ -30,7 +30,6 @@ class Workout extends Component {
         const { name, category, timeline, currentStat, goalStat } = this.props.workout;
         return (
             <div className='workout' onClick={this.toggleWorkoutView}>
-
                 <div className="workout__headline">
 
                     <div className="workout__headline__title">
