@@ -2,11 +2,6 @@ import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Goal.scss';
 
-const getPercentage = (numerator, denominator) => {
-    let num = (numerator / denominator).toFixed(2) * 100;
-    return num + '%';
-}
-
 class Workout extends Component {
     constructor(props) {
         super(props);
@@ -17,6 +12,7 @@ class Workout extends Component {
     toggleWorkoutView = () => {
         this.setState({ showWorkout: !this.state.showWorkout });
     };
+
     showWorkout() {
         if (this.state.showWorkout) {
             return (
@@ -26,19 +22,25 @@ class Workout extends Component {
             )
         }
     }
+
+    getPercentage(numerator, denominator) {
+        let num = (numerator / denominator).toFixed(2) * 100;
+        return num + '%';
+    }
+
     render() {
-        const { name, category, timeline, currentStat, goalStat } = this.props.workout;
+        const { name, type, category, goal, startDate, endDate, frequency, workout, day } = this.props.workout;
         return (
             <div className='workout' onClick={this.toggleWorkoutView}>
                 <div className="workout__headline">
 
                     <div className="workout__headline__title">
-                        <h4>{name} <span>{category}</span></h4>
-                        <p className='text-secondary'>Due Date: {timeline}</p>
+                        <h4>{name}</h4>
+                        <p className='text-secondary'>Day: {day}</p>
                     </div>
 
                     <div className='workout__headline__stats'>
-                        <p className=''>{getPercentage(currentStat, goalStat)}</p>
+                        <p className=''>{this.getPercentage(goal.current, goal.max)}</p>
                         <button className='workout__headline__stats__button'>View Progress</button>
                         <FontAwesomeIcon icon='ellipsis-v' />
                     </div>
