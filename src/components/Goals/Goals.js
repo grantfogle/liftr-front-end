@@ -1,5 +1,5 @@
 import React from 'react';
-import Goal from './Goal/Goal';
+import Workout from './Goal/Goal';
 import './Goals.scss';
 
 let currentGoals = [
@@ -10,7 +10,7 @@ let currentGoals = [
     { name: 'Lose 10 Pounds', category: 'Weight Loss', currentStat: '185', goalStat: '175', timeline: 'Jan 21, 2021' },
 ];
 
-let displayGoals = (goals) => goals.map((goal) => <Goal goal={goal} />);
+let displayGoals = (goals) => goals.map((goal) => <Workout workout={goal} />);
 
 const Goals = () => {
     return (
