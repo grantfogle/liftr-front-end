@@ -1,25 +1,31 @@
 .workout {
     width: 100%;
-    height: 80px;
+    min-height: 100px;
     background-color: #16a085;
     border: 2px solid #16a085;
     border-radius: .5em;
-    margin: 1em;
-    padding: 1em;
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
     &__headline {
+        height: 100px;
         width: 100%;
-        height: 100%;
         display: flex;
         justify-content: space-between;
-        align-content: center;
         &__title {
             width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            p {
+                margin: 0;
+            }
+            h4 {
+                margin: 0;
+            }
         }
         &__stats {
             width: 200px;
-            height: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -39,5 +45,12 @@
                 border-radius: 10px;
             }
         }
+    }
+    &__show {
+        width: 100%;
+        min-height: 400px;
+    }
+    &__hide {
+        display: none;
     }
 }
