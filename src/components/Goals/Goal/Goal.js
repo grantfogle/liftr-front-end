@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Goal.scss';
+import { array } from 'prop-types';
 
 class Workout extends Component {
     constructor(props) {
@@ -13,11 +14,15 @@ class Workout extends Component {
         this.setState({ showWorkout: !this.state.showWorkout });
     };
 
-    showWorkout() {
+    showWorkout(workout) {
         if (this.state.showWorkout) {
             return (
                 <div className='workout__view'>
-                    <h4>Workout bruh</h4>
+                    {workout.map(exercise => {
+                        return (
+                            <div>{exercise.name}</div>
+                        );
+                    })}
                 </div>
             )
         }
@@ -40,13 +45,13 @@ class Workout extends Component {
                     </div>
 
                     <div className='workout__headline__stats'>
-                        <p className=''>{this.getPercentage(goal.current, goal.max)}</p>
+                        <p className=''>{this.getPercentage(goal.current, goal.goal)}</p>
                         <button className='workout__headline__stats__button'>View Progress</button>
                         <FontAwesomeIcon icon='ellipsis-v' />
                     </div>
 
                 </div>
-                {this.showWorkout()}
+                {this.showWorkout(workout)}
             </div>
         );
     }
