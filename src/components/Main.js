@@ -14,15 +14,15 @@ class Main extends Component {
                 <div className='main__container'>
                     <SideNav />
                     <div class='main__container__primary-content'>
-                        <Goals />
                         {/* <Switch>
                             <Route path='/goals' component={Goals} />
                             <Route path='/dashboard' component={Dashboard} />
                             <Route path='/workouts' component={Workouts} />
                         </Switch> */}
+                        <Dashboard />
                     </div>
                 </div>
-            </div >
+            </div>
         );
     }
 }

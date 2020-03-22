@@ -15,8 +15,8 @@ class SideNav extends Component {
     render() {
         return (
             <div class='side-nav'>
-                <h6>
-                    <Link to='/dashboard'>
+                <h6 key='dashboard'>
+                    <Link to='/main/dashboard'>
                         <FontAwesomeIcon icon='chart-line' /> Dashboard
                     </Link>
                 </h6>
@@ -28,8 +28,8 @@ class SideNav extends Component {
                     <li>
                         <FontAwesomeIcon icon='pen' /> Track Workout
                     </li>
-                    <li>
-                        <Link to='/goals'><FontAwesomeIcon icon='dumbbell' /> Update Goals</Link>
+                    <li key='goals'>
+                        <Link to='/main/goals'><FontAwesomeIcon icon='dumbbell' /> Update Goals</Link>
                     </li>
                 </ul>
                 <h6>My profile</h6>

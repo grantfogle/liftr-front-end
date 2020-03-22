@@ -90,9 +90,12 @@ let program = [
 
 let displayGoals = (goals) => goals.map((goal) => <Workout workout={goal} />);
 
+
+
 const Goals = () => {
     return (
-        <div class='goals'>
+        <div className='goals'>
+            <h2>Workouts for Week of March 20, 2020</h2>
             {displayGoals(program)}
         </div>
     );
