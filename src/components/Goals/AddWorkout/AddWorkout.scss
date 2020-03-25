@@ -1,0 +1,29 @@
+.add-workout-form {
+    background-color: #efefef;
+    padding: 1em;
+    width: 100%;
+    border-radius: .5em;
+    &__section {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #2c3e50;
+    }
+    input {
+        border: none;
+        border-radius: 20px;
+        padding: .5em 1em;
+    }
+    &__workout {
+        &__row {
+           input {
+                width: 100px;
+            }
+            select {
+                height: 100%;
+            }
+        }
+    }
+
+}   

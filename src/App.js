@@ -5,7 +5,7 @@ import Goals from './components/Goals/Goals';
 import './index.scss';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch, faUser, faChartLine, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faUser, faChartLine, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning, faEllipsisV, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 class App extends Component {
 
@@ -18,13 +18,13 @@ class App extends Component {
   }
 
   render() {
-    library.add(faChartLine, faUser, faSearch, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning, faEllipsisV);
+    library.add(faChartLine, faUser, faSearch, faCog, faDumbbell, faPen, faMapMarkerAlt, faRunning, faEllipsisV, faPlus);
     return (
       <Router>
         <div className='app'>
           <Switch>
             <Route path='/login' component={Login} />
-            <Route path='/main' component={Main} />
+            <Route exact path='/' component={Main} />
             {/* <Route path='/goals' component={Goals} /> */}
           </Switch>
         </div>

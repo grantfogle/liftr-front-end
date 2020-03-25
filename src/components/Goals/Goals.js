@@ -1,5 +1,7 @@
 import React from 'react';
 import Workout from './Goal/Goal';
+import AddWorkout from './AddWorkout/AddWorkout';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './Goals.scss';
 
 let program = [
@@ -97,6 +99,13 @@ const Goals = () => {
         <div className='goals'>
             <h2>Workouts for Week of March 20, 2020</h2>
             {displayGoals(program)}
+            <AddWorkout />
+            <div className="goals__add-goal d-flex align-content-center mt-2">
+                <button className="goals__add-goal__button mr-2">
+                    <FontAwesomeIcon icon='plus' />
+                </button>
+                <h4 className="m-0 d-flex align-items-center">Add Workout</h4>
+            </div>
         </div>
     );
 }

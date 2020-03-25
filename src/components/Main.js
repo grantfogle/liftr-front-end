@@ -19,7 +19,9 @@ class Main extends Component {
                             <Route path='/dashboard' component={Dashboard} />
                             <Route path='/workouts' component={Workouts} />
                         </Switch> */}
-                        <Dashboard />
+                        {/* <Dashboard /> */}
+                        {/* <Workouts /> */}
+                        <Goals />
                     </div>
                 </div>
             </div>
