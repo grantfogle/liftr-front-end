@@ -63,7 +63,7 @@ class AddWorkout extends Component {
                         </div>
                         <button>Add row</button>
                     </div>
-                    <button>Submit</button>
+                    <button >Submit</button>
                 </form>
             </div>
         );
